@@ -1,5 +1,9 @@
 FROM node:20
-WORKDIR MYPROJECT
-COPY . ./MYPROJECT
+
+WORKDIR /MYPROJECT
+
+COPY . .
+
 RUN npm install
-RUN npm start
+
+CMD ["npm", "start"]
