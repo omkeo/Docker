@@ -1,3 +1,5 @@
-FROM alpine:3.19
-
-RUN apk add curl
+FROM node:20
+WORKDIR MYPROJECT
+COPY . .
+RUN npm install
+RUN npm start
