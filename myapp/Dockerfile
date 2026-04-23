@@ -1,5 +1,5 @@
 FROM node:20
 WORKDIR MYPROJECT
-COPY . .
+COPY . ./MYPROJECT
 RUN npm install
 RUN npm start
